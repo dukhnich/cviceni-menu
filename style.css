@@ -43,3 +43,36 @@ a:hover {
 	- 640px
 	- 1000px
 */
+.hlavicka {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.menu li {
+  flex-basis: 100%;
+}
+
+@media (min-width: 640px) {
+  .menu ul {
+    flex-wrap: nowrap;
+  }
+  .menu li {
+    flex: 1 1 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .hlavicka {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
